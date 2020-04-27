@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title text-center>Jobbers</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <div class="form">
+        <h2>Hey Sam, <br>What kind of job you're<br>looking for?</h2>
+        <ion-list no-lines>
+            <ion-item>
+                <ion-input type="text" placeholder="Job title,keyword, skills, etc..."></ion-input>
+            </ion-item>
+            <ion-list>
+                <ion-item>
+                    <ion-select [(ngModel)]="experience">
+                        <ion-option value="years">Years of experience</ion-option>
+                        <ion-option value="one">1 years</ion-option>
+                        <ion-option value="two">2 years</ion-option>
+                    </ion-select>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" placeholder="Location"></ion-input>
+                </ion-item>
+            </ion-list>
+            <button ion-button block class="btn" (click)="locationsearch()">Search for job</button>
+        </ion-list>
+    </div>
+    <ion-row class="update_resume" (click)="updateresume()">
+        <ion-col col-3>
+            <div class="img-box" text-center>
+                <img src="assets/imgs/ic_upload%20resume.png">
+            </div>
+        </ion-col>
+        <ion-col col-9>
+            <h2>Update resume now !</h2>
+            <p>Update your resume to get related company notification</p>
+        </ion-col>
+    </ion-row>
+</ion-content>

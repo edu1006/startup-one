@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>SIGN UP</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="form">
+        <h2>Regsitered with Jobbers <br>500k+Jobs available</h2>
+        <ion-list no-lines margin-top>
+            <ion-item>
+                <ion-label floating>Full name</ion-label>
+                <ion-input type="text" value="Sam Smith"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Phone number</ion-label>
+                <ion-input type="text" value="+1 987643210"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Email address</ion-label>
+                <ion-input type="text" value="samsmith@mail.com"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password" class="password" value="******"></ion-input>
+            </ion-item>
+        </ion-list>
+        <button ion-button block class="btn" (click)="tabs()">Sign up</button>
+    </div>
+</ion-content>

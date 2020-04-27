@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>SIGN IN</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <div class="form">
+        <h2>Sign in with Jobbers <br>500k+Jobs available</h2>
+        <ion-list no-lines margin-top>
+            <ion-item>
+                <ion-label floating>Email address</ion-label>
+                <ion-input type="email" value="Luiswiliams@mail.com"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password" class="password" value="******"></ion-input>
+            </ion-item>
+        </ion-list>
+        <button ion-button block class="btn" (click)="tabs()">Sign in</button>
+        <h3 text-center (click)="password()">Forgot Password</h3>
+        <div class="fixed-bottom" (click)="signup()">
+            <p text-center>Not Registered yet?<span> Sign up</span></p>
+        </div>
+    </div>
+</ion-content>
