@@ -1,10 +1,10 @@
 <ion-header>
     <ion-navbar>
-        <ion-title>Select Resume</ion-title>
+        <ion-title>Selecionar Currículo</ion-title>
     </ion-navbar>
     <ion-row>
         <ion-col col-6>
-            <p><small>Applying for</small></p>
+            <p><small>Candidatar-se</small></p>
             <h2>UI/UX Designer</h2>
         </ion-col>
         <ion-col col-6 text-end>
@@ -16,7 +16,7 @@
 
 <ion-content padding class="bg-light">
     <ion-list radio-group no-lines>
-        <h2>Current Resumes</h2>
+        <h2>Currículos atuais</h2>
         <ion-item>
             <ion-radio checked="true" item-start value="resumes1"></ion-radio>
             <ion-label>
@@ -24,7 +24,7 @@
                     <span class="name">Sam Smith</span>
                     <span class="resumes-type">UI UX Designer. pdf</span>
                 </h5>
-                <p>Uploaded on 26 June 2018</p>
+                <p>Enviado em 26 Junho 2018</p>
             </ion-label>
             <ion-icon name="more" item-end></ion-icon>
         </ion-item>
@@ -35,31 +35,31 @@
                     <span class="name">Sam Smith</span>
                     <span class="resumes-type">UI UX Designer. pdf</span>
                 </h5>
-                <p>Uploaded on 26 June 2018</p>
+                <p>Enviado em 26 Junho 2018</p>
             </ion-label>
             <ion-icon name="more" item-end></ion-icon>
         </ion-item>
         <div class="add-new-resumes">
-            <h2>Add new Resumes</h2>
+            <h2>Adicionar novo currículo</h2>
             <ion-item class="attach_file">
                 <img item-start src="assets/imgs/ic_attach_file.png">
                 <ion-label>
                     <h5>
-                        <span class="">Attach file from phone</span>
+                        <span class="">Anexar arquivo do telefone</span>
                     </h5>
-                    <p>.pdf, .doc, .tex, .cdr, ,rtf accepted</p>
+                    <p>.pdf, .doc, .tex, .cdr, ,rtf aceitos</p>
                 </ion-label>
             </ion-item>
             <ion-item class="create">
                 <img item-start src="assets/imgs/ic_create_new.png">
                 <ion-label>
                     <h5>
-                        <span class="">Create new with Jobber</span>
+                        <span class="">Criar novo Currículo</span>
                     </h5>
-                    <p>Creating resume never Been so easy before</p>
+                    <p>Criar um currículo nunca foi tão fácil antes</p>
                 </ion-label>
             </ion-item>
         </div>
-        <button ion-button block class="btn" (click)="resumesent()">Send</button>
+        <button ion-button block class="btn" (click)="resumesent()">Enviar</button>
     </ion-list>
 </ion-content>
